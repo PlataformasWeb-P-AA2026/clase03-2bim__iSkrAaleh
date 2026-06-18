@@ -1,0 +1,14 @@
+<h3>{{ mititulo }}</h3>
+Número de estudiantes {{ numero_estudiantes }}
+<hr>
+<br/>
+
+<ul>
+
+{% for e in estudiantes %}
+  <li>{{ forloop.counter }} - {{ e.nombre }} - telefonos ({{ e.obtener_cantidad }})</li>
+{% endfor %}
+
+</ul>
+
+<hr>

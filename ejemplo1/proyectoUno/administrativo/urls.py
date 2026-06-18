@@ -5,6 +5,7 @@
 from django.urls import path
 # se importa las vistas de la aplicación
 from . import views
+from . import views1
 
 
 urlpatterns = [
@@ -13,4 +14,10 @@ urlpatterns = [
             name='listadoEstudiates'),
         path('listado/estudiantes/dos', views.listadoEstudiantesDos,
             name='listadoEstudiatesDos'),
+        path('listado/estudiantes/nuevo', views1.listado_nuevo,
+            name='listadoNuevo'),
+        path('listado/estudiantes/tres', views.listadoEstudiantes,
+             name='listadoEstudiantesTres'),
+
  ]
+
