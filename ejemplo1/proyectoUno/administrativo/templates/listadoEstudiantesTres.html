@@ -1,14 +1,16 @@
-<h3>{{ mititulo }}</h3>
-Número de estudiantes {{ numero_estudiantes }}
-<hr>
-<br/>
+<div style="border: 2px solid black; padding: 20px; display: inline-block; min-width: 400px;">
 
-<ul>
+    <h3>{{ mititulo }}</h3>
+    Número de estudiantes {{ numero_estudiantes }}
+    <hr>
+    <br/>
 
-{% for e in estudiantes %}
-  <li>{{ forloop.counter }} - {{ e.nombre }} - telefonos ({{ e.obtener_cantidad }})</li>
-{% endfor %}
+    <ul>
+    {% for e in estudiantes %}
+      <li>{{ forloop.counter }} - {{ e.nombre }} - telefonos ({{ e.obtener_cantidad }})</li>
+    {% endfor %}
+    </ul>
 
-</ul>
+    <hr>
 
-<hr>
+</div>

@@ -1,0 +1,17 @@
+<div style="border: 2px solid black; padding: 20px; display: inline-block; min-width: 400px;">
+
+    <h3>Crear un nuevo País</h3>
+    <hr>
+
+    <form method="post">
+        {% csrf_token %}
+        {{ formulario.as_p }}
+        <br>
+        <button type="submit">Guardar País</button>
+    </form>
+
+    <br>
+    <hr>
+    <a href="{% url 'index' %}">Volver al listado</a>
+
+</div>
